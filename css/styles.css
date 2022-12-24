@@ -423,7 +423,7 @@ header {
 .social-link-link:hover, :focus {
     background-color: var(--accent-color)
 }
-.social-icon {
+.team-list .social-icon {
     fill: #AFB1B8;
 
 }
@@ -460,7 +460,8 @@ header {
 /* Підвал */
 .conteiner-footer {
  display: flex;
- align-items: center;
+ align-items: flex-start;
+ gap: 70px;
 }
 .footer {
   padding-top: 60px;
@@ -514,11 +515,58 @@ header {
   color: var(--accent-color);
 }
 footer .footer-socials {
+  display: flex;
+  margin-top: 0;
   padding-left: 0;
-  margin: 0;
-  
+  margin-bottom: 0;
 
 }
+footer .social-link:hover, :focus {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+footer .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-social-link {
+  display: flex;
+  align-items: center;
+}
+.footer-socials {
+  gap: 10px;
+
+}
+footer .footer-icon {
+  fill: #FFFFFF;
+}
+.socials-title {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+.socials-box {
+display: flex;
+flex-direction: column;
+
+}
+
+
 
 /*  Portfolio */
 
