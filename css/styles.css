@@ -189,18 +189,17 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-.mail-icon {
+.mail .mail-icon {
   display: inline-block;
-  width: 16px;
-  height: 12px;
   fill: var(--primary-text-color);
 }
-.mail-icon:focus, :hover {
+.tell:hover .mail-icon,
+.tell:focus .mail-icon {
   fill: var(--accent-color);
 }
-.mail-btn {
+.mail-pic {
   display: flex;
-  align-content: center;
+  gap: 10px;
 }
 
 /* Герой */
@@ -420,14 +419,16 @@ header {
     background-color: #fff;
     border-radius: 50%;
 }
-.social-link-link:hover, :focus {
+.social-link-link:hover,
+.social-link-link:focus {
     background-color: var(--accent-color)
 }
 .team-list .social-icon {
     fill: #AFB1B8;
 
 }
-.social-icon:hover, :focus {
+.social-link-link:hover .social-icon,
+.social-link-link:focus .social-icon {
     fill: #FFFFFF;
     
 }
@@ -455,6 +456,10 @@ header {
 }
 .clients-item:hover, :focus {
   border-color: #2196f3;
+}
+.clients-item:hover .clients-icon,
+.clients-item:focus .clients-icon {
+  fill: var(--accent-color);
 }
 
 /* Підвал */
