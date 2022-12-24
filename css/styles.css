@@ -40,6 +40,18 @@ h3 {
   padding: 0;
   margin: 0;
   text-decoration: none;
+
+}
+h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 .section {
   padding-top: 94px;
@@ -114,7 +126,8 @@ header {
   color: var(--title-text-color);
 }
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.site-nav .link:active {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -131,12 +144,15 @@ header {
   color: var(--accent-color);
 }
 .tell {
+  display: flex;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  align-items: center;
+  gap: 10px;
 }
 .tell:hover,
 .tell:focus {
@@ -150,6 +166,7 @@ header {
 .mail {
   display: flex;
   justify-content: end;
+  align-content: center;
   margin-bottom: 0;
   margin-top: 0;
   margin-left: auto;
@@ -171,6 +188,19 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.mail-icon {
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  fill: var(--primary-text-color);
+}
+.mail-icon:focus, :hover {
+  fill: var(--accent-color);
+}
+.mail-btn {
+  display: flex;
+  align-content: center;
 }
 
 /* Герой */
@@ -255,7 +285,20 @@ header {
 .section-work {
   padding-top: 0;
 }
-
+.bonuses-icon {
+  fill: #212121;
+}
+.icon-box {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  border: #757575;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
 /* Наша Комантда */
 .section-team {
   padding-top: 94px;
@@ -263,17 +306,7 @@ header {
   margin-right: auto;
   background-color: var(--team-background);
 }
-.team-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-}
+
 .team-list {
   display: flex;
   justify-content: space-around;
@@ -399,7 +432,36 @@ header {
     
 }
 
+/* Clients */
+.clients-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 0;
+  padding-left: 0;
+
+}
+.clients-icon {
+  fill: #AFB1B8;
+}
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+.clients-item:hover, :focus {
+  border-color: #2196f3;
+}
+
 /* Підвал */
+.conteiner-footer {
+ display: flex;
+ align-items: center;
+}
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -450,6 +512,12 @@ header {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+footer .footer-socials {
+  padding-left: 0;
+  margin: 0;
+  
+
 }
 
 /*  Portfolio */
