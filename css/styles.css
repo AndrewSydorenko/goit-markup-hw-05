@@ -126,8 +126,7 @@ header {
   color: var(--title-text-color);
 }
 .site-nav .link:hover,
-.site-nav .link:focus,
-.site-nav .link:active {
+.site-nav .link:focus {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -453,6 +452,7 @@ header {
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  cursor: pointer;
 }
 .clients-item:hover, :focus {
   border-color: #2196f3;
@@ -543,6 +543,7 @@ footer .social-link {
 .footer-social-link {
   display: flex;
   align-items: center;
+  
 }
 .footer-socials {
   gap: 10px;
@@ -642,12 +643,21 @@ flex-direction: column;
   color: var(--title-text-color);
 }
 .work-item {
+  margin-bottom: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+}
+.work-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+
+
 }
 .work-list {
   gap: 30px;
@@ -668,7 +678,7 @@ flex-direction: column;
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .works p {
-  margin-bottom: 0;
+  margin: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -678,7 +688,7 @@ flex-direction: column;
 }
 
 .works div {
-  padding: 20px;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
