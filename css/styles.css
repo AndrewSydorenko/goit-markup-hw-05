@@ -29,6 +29,9 @@ img {
 a {
   text-decoration: none;
 }
+a :active {
+  background-color: #FFFFFF;
+}
 ul,
 li {
   list-style-type: none;
@@ -457,6 +460,10 @@ header {
 .clients-item:hover, :focus {
   border-color: #2196f3;
 }
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--accent-color);
+}
 .clients-item:hover .clients-icon,
 .clients-item:focus .clients-icon {
   fill: var(--accent-color);
@@ -465,7 +472,7 @@ header {
 /* Підвал */
 .conteiner-footer {
  display: flex;
- align-items: flex-start;
+ align-items: baseline;
  gap: 70px;
 }
 .footer {
@@ -526,9 +533,14 @@ footer .footer-socials {
   margin-bottom: 0;
 
 }
-footer .social-link:hover, :focus {
+footer .social-link:hover,
+footer .social-link:focus {
   background-color: var(--accent-color);
   cursor: pointer;
+}
+footer .social-link:hover .footer-icon,
+footer .social-link:focus .footer-icon {
+  fill: var(--background-color);
 }
 footer .social-link {
   display: flex;
@@ -554,7 +566,7 @@ footer .footer-icon {
 }
 .socials-title {
   display: flex;
-  margin-top: 15px;
+  margin-top: 0;
   margin-bottom: 20px;
 
   font-style: normal;
@@ -671,9 +683,11 @@ flex-direction: column;
   width: 370px;
   margin-left: 0;
 }
-.work-done:hover,
+.work-done a {
+  display: block;
+}
+.work-done a:hover,
 :focus {
-  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
