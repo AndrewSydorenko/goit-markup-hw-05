@@ -144,7 +144,7 @@ header {
   position: relative;
 }
 
-.nav-item:hover::after {
+.nav-item :current ::after {
   position: absolute;
   content: "";
   width: 100%;
