@@ -824,14 +824,14 @@ footer .footer-icon {
   color: var(--background-color);
 }
 
-.work-done a {
+.work-done {
   display: block;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-done a:hover,
+.work-done:hover,
 :focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
