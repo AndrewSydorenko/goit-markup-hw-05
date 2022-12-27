@@ -232,7 +232,7 @@ header {
   padding: 0;
 }
 
-.mail li + li {
+.mail li+li {
   margin-left: 50px;
 }
 
@@ -276,11 +276,9 @@ header {
 
   background-color: var(--hero-background);
   background-size: cover;
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+      rgba(47, 48, 58, 0.4)),
     url("../images/heroBg.jpg");
 }
 
@@ -400,7 +398,7 @@ header {
   position: relative;
 }
 
-.example > .label {
+.example>.label {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -874,11 +872,13 @@ footer .footer-icon {
   pointer-events: none;
   visibility: hidden;
 }
+
 .backdrop.is-hidden .modal {
   animation-name: scaleModal;
   animation-duration: 6000ms;
   animation-timing-function: cubic-bezier(0.9, -0.2, 0.54, 0.98);
 }
+
 .modal {
   position: absolute;
   top: 50%;
@@ -907,19 +907,24 @@ footer .footer-icon {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--background-color);
 }
+
 @keyframes opacityModal {
   0% {
     transform: opacity(1);
   }
+
   25% {
     transform: opacity(0.7);
   }
+
   50% {
     transform: opacity(0.5);
   }
+
   75% {
     transform: opacity(0.2);
   }
+
   100% {
     transform: opacity(0);
   }
