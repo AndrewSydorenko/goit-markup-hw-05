@@ -152,7 +152,7 @@ header {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 
-  transition-property: var(--accent-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -165,9 +165,6 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  transition-property: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -203,7 +200,7 @@ header {
   align-items: center;
   gap: 10px;
 
-  transition-property: var(--accent-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -252,6 +249,10 @@ header {
 .mail .mail-icon {
   display: inline-block;
   fill: var(--primary-text-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tell:hover .mail-icon,
@@ -536,7 +537,7 @@ header {
   background-color: #fff;
   border-radius: 50%;
 
-  transition-property: var(--accent-color);
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -548,6 +549,10 @@ header {
 
 .team-list .social-icon {
   fill: #afb1b8;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-link:hover .social-icon,
@@ -567,7 +572,7 @@ header {
 .clients-icon {
   fill: #afb1b8;
 
-  transition-property: var(--accent-color);
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -582,7 +587,7 @@ header {
   border-radius: 4px;
   cursor: pointer;
 
-  transition-property: var(--accent-color);
+  transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -590,7 +595,7 @@ header {
 
 .clients-link:hover,
 .clients-link:focus {
-  border-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .clients-item:hover .clients-icon,
@@ -623,7 +628,7 @@ header {
   letter-spacing: 0.03em;
   color: var(--hero-color);
 
-  transition-property: var(--accent-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -649,7 +654,7 @@ header {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 
-  transition-property: var(--accent-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -691,7 +696,7 @@ footer .footer-socials {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 
-  transition-property: var(--accent-color);
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -713,6 +718,10 @@ footer .footer-socials {
 
 footer .footer-icon {
   fill: #ffffff;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-title {
@@ -755,7 +764,7 @@ footer .footer-icon {
   padding-top: 6px;
   padding-bottom: 6px;
 
-  transition-property: var(--accent-color);
+  transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -819,7 +828,7 @@ footer .footer-icon {
   overflow: hidden;
 }
 
-.work-done:hover .overlay-text {
+.work-link:hover .overlay-text {
   transform: translateY(0);
 }
 
